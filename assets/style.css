@@ -1,0 +1,47 @@
+/* se importa estilo/tipo de fuente desde googleapis */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* reinicio de márgenes y espacios */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif; /* se establece el tipo de fuente importado */
+}
+
+nav,
+.links-navegacion {
+    display: flex; /* establecer el contenido en horizontal */
+}
+
+nav{
+    align-items: center; /* centrar verticalmente dentro de contenedor flexbox */
+    height: 17vh; /* sección nav usará el 17% de la altura de ventana gráfica */
+    justify-content: space-around; /* distribuir contenido en espacio disponible */ 
+}
+
+.links-navegacion{
+    font-size: 1.5rem; /* tamaño fuente links navegación 16px * 1.5 = 24px */
+    gap: 2rem; /* espacio entre links , 1rem = 16px */
+    list-style: none; /* quitar circulos alrededor de cada link */
+}
+
+a{
+    color: black; /* color texto de etiqueta hipervínculo <a> */
+    text-decoration: none; /* remover subrayado de texto */
+    text-decoration-color: red;
+}
+
+/* pseudoclase hover se utiliza cuando se pasa el cursor sobre elementos */
+a:hover{
+    color: gray; /* establecer color */
+    text-decoration: underline; /* establecer subrayado */
+    text-underline-offset: 1rem; /* distancia de subrayado y texto */
+    text-decoration-color: rgb(255, 0, 0);
+}
+
+.logo{
+    font-size: 2rem;
+}
