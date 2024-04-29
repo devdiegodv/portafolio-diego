@@ -1,9 +1,11 @@
 @media screen and (max-width: 1200px) {
+    /* Se aplica solo cuando el ancho de la pantalla es igual o inferior a 1200px */
+
     #navegacion-escritorio {
-        display: none;
+        display: none; /* Oculta la navegación de escritorio cuando el ancho de la pantalla es igual o inferior a 1200px. */
     }
 
-    #navegacion-hamburguesa{
-        display: flex;
+    #navegacion-hamburguesa {
+        display: flex; /* Muestra el menú de hamburguesas cuando el ancho de la pantalla es igual o inferior a 1200px, utilizando la disposición flexbox. */
     }
 }

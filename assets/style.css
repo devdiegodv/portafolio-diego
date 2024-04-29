@@ -11,37 +11,85 @@ body {
     font-family: "Poppins", sans-serif; /* se establece el tipo de fuente importado */
 }
 
+html {
+    scroll-behavior: smooth; /* Establece un desplazamiento suave para el documento HTML, lo que significa que los desplazamientos se animarán en lugar de ser instantáneos. */
+}
+
+a,
+.btn {
+    transition: all 300ms ease; /* Establece una transición para todos los cambios de propiedades CSS en los elementos anclados `<a>` y los botones `.btn`. La transición tendrá una duración de 300 milisegundos y una función de temporización de aceleración suave. Esto significa que cualquier cambio en propiedades CSS (como color, tamaño, posición, etc.) se animará durante 300ms con un efecto de aceleración suave. */
+}
+
 nav,
 .links-navegacion {
     display: flex; /* establecer el contenido en horizontal */
 }
 
-nav{
+nav {
     align-items: center; /* centrar verticalmente dentro de contenedor flexbox */
     height: 17vh; /* sección nav usará el 17% de la altura de ventana gráfica */
     justify-content: space-around; /* distribuir contenido en espacio disponible */ 
 }
 
-.links-navegacion{
+.links-navegacion {
     font-size: 1.5rem; /* tamaño fuente links navegación 16px * 1.5 = 24px */
     gap: 2rem; /* espacio entre links , 1rem = 16px */
     list-style: none; /* quitar circulos alrededor de cada link */
 }
 
-a{
+a {
     color: black; /* color texto de etiqueta hipervínculo <a> */
     text-decoration: none; /* remover subrayado de texto */
-    text-decoration-color: red;
 }
 
 /* pseudoclase hover se utiliza cuando se pasa el cursor sobre elementos */
-a:hover{
+a:hover {
     color: gray; /* establecer color */
     text-decoration: underline; /* establecer subrayado */
     text-underline-offset: 1rem; /* distancia de subrayado y texto */
-    text-decoration-color: rgb(255, 0, 0);
+    text-decoration-color: rgb(255, 0, 0); /* color del subrayado de los enlaces. */
 }
 
-.logo{
-    font-size: 2rem;
+.logo {
+    font-size: 2rem; /* Define el tamaño de la fuente del elemento con la clase "logo". */
+}
+
+.logo:hover {
+    cursor: default; /* Define el cursor predeterminado cuando se pasa el cursor sobre el elemento con la clase "logo". */
+}
+
+#navegacion-hamburguesa {
+    display: none; /* Oculta el elemento con el id "navegacion-hamburguesa". */
+}
+
+.menu-hamburguesa {
+    display: inline-block; /* Hace que el menú de hamburguesas se muestre en línea. */
+    position: relative; /* Establece la posición del menú de hamburguesas como relativa. */
+}
+
+.icono-hamburguesa {
+    cursor: pointer; /* Define el cursor como un puntero al pasar el ratón sobre el icono de hamburguesa. */
+    display: flex; /* Establece el contenedor de icono de hamburguesa como un contenedor flex. */
+    flex-direction: column; /* Establece la dirección de los elementos del icono de hamburguesa como columna. */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos del icono de hamburguesa. */
+    height: 24px; /* Define la altura del icono de hamburguesa. */
+    width: 30px; /* Define el ancho del icono de hamburguesa. */
+}
+
+.icono-hamburguesa span {
+    background-color: black; /* Define el color de fondo de las líneas del icono de hamburguesa. */
+    height: 2px; /* Define la altura de las líneas del icono de hamburguesa. */
+    transition: all 0.3 ease-in-out; /* Define la transición de todas las propiedades durante 0.3 segundos con un efecto de entrada y salida. */
+    width: 100%; /* Define el ancho de las líneas del icono de hamburguesa como el 100% del contenedor. */
+}
+
+.menu-links {
+    background-color: white; /* Define el color de fondo del menú desplegable. */
+    max-height: 0; /* Define la altura máxima del menú desplegable como 0 (inicialmente oculto). */
+    max-width: fit-content; /* Define el ancho máximo del menú desplegable para que se ajuste al contenido. */
+    overflow: hidden; /* Oculta cualquier contenido que desborde del menú desplegable. */
+    position: absolute; /* Establece la posición del menú desplegable como absoluta. */
+    right: 0; /* Alinea el menú desplegable a la derecha. */
+    top: 100%; /* Coloca el menú desplegable justo debajo del elemento que lo activa. */
+    transition: all 0.3 ease-in-out; /* Define la transición de todas las propiedades durante 0.3 segundos con un efecto de entrada y salida. */
 }
