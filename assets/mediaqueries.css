@@ -1,0 +1,9 @@
+@media screen and (max-width: 1200px) {
+    #navegacion-escritorio {
+        display: none;
+    }
+
+    #navegacion-hamburguesa{
+        display: flex;
+    }
+}
