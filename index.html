@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
 
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="assets/mediaqueries.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mediaqueries.css">
 </head>
 <body>
     <nav id="navegacion-escritorio">
-        <div class="logo">Diego Donoso Vera</div>
+        <div class="logo">Diego Donoso</div>
         <div>
             <ul class="links-navegacion">
                 <li>
@@ -30,28 +30,59 @@
     </nav>
 
     <nav id="navegacion-hamburguesa">
-        <div class="logo">Diego Donoso Vera</div>
+        <div class="logo">Diego Donoso</div>
         <div class="menu-hamburguesa">
-            <div class="icono-hamburguesa" onclick="toggleMenu()">
+            <div class="icono-hamburguesa" onclick="mostrarMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <div class="menu-links">
                 <li>
-                    <a href="#sobre-mi" onclick="toggleMenu()">Sobre Mí</a>
+                    <a href="#sobre-mi" onclick="mostrarMenu()">Sobre Mí</a>
                 </li>
                 <li>
-                    <a href="#experiencia" onclick="toggleMenu()">Experiencia</a>
+                    <a href="#experiencia" onclick="mostrarMenu()">Experiencia</a>
                 </li>
                 <li>
-                    <a href="#proyectos" onclick="toggleMenu()">Proyectos</a>
+                    <a href="#proyectos" onclick="mostrarMenu()">Proyectos</a>
                 </li>
                 <li>
-                    <a href="#contacto" onclick="toggleMenu()">Contacto</a>
+                    <a href="#contacto" onclick="mostrarMenu()">Contacto</a>
                 </li>
             </div>
         </div>
     </nav>
+
+    <section id="sobre-mi">
+        <div class="seccion__contenedor-foto">
+            <img src="./assets/media/foto-diego.jpg" alt="Foto de perfil de Diego Donoso Vera">
+        </div>
+        <div class="seccion__texto">
+            <p class="seccion__texto__parte1">Hola, Soy</p>
+            <h1 class="titulo">Diego Donoso Vera</h1>
+            <p class="seccion_texto_parte2">Desarrollador Full Stack</p>
+            <div class="boton-contenedor">
+                <button class="boton boton-color-2" onclick="window.open('./assets/files/CV_DIEGO_DONOSO.PDF')">Descargar CV</button>
+                <button class="boton boton-color-1" onclick="location.href='./#contacto'">Contáctame</button>
+            </div>
+            <div id="contenedor-redes-sociales">
+                <img 
+                    src="./assets/media/linkedin.png" 
+                    alt="Mi perfil de Linkedin"
+                    class="icono"
+                    onclick="window.open('https://www.linkedin.com/in/diegodonosovera/', '_blank')"
+                > 
+                <img 
+                    src="./assets/media/github.png" 
+                    alt="Mi perfil de Github"
+                    class="icono"
+                    onclick="window.open('https://github.com/devdiegodv/', '_blank')"
+                > 
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
