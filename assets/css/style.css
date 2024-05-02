@@ -86,10 +86,54 @@ a:hover {
 .menu-links {
     background-color: white; /* Define el color de fondo del menú desplegable. */
     max-height: 0; /* Define la altura máxima del menú desplegable como 0 (inicialmente oculto). */
-    max-width: fit-content; /* Define el ancho máximo del menú desplegable para que se ajuste al contenido. */
     overflow: hidden; /* Oculta cualquier contenido que desborde del menú desplegable. */
     position: absolute; /* Establece la posición del menú desplegable como absoluta. */
     right: 0; /* Alinea el menú desplegable a la derecha. */
     top: 100%; /* Coloca el menú desplegable justo debajo del elemento que lo activa. */
     transition: all 0.3 ease-in-out; /* Define la transición de todas las propiedades durante 0.3 segundos con un efecto de entrada y salida. */
+    width: fit-content; /* Define el ancho máximo del menú desplegable para que se ajuste al contenido. */
+}
+
+.menu-links a {
+    color: black; /* Color del texto */
+    display: block; /* Hace que los enlaces se muestren como bloques */
+    font-size: 1.5rem; /* Tamaño de fuente */
+    padding: 10px; /* Espacio alrededor del texto */
+    text-align: center; /* Alineación del texto al centro */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    transition: all 0.3s ease-in-out; /* Define una transición suave para todas las propiedades durante 0.3 segundos con un efecto de entrada y salida */
+}
+
+.menu-links li {
+    list-style: none; /* Quita los marcadores de la lista */
+}
+
+.menu-links.open {
+    max-height: 300px; /* Altura máxima del menú abierto */
+}
+
+/* Estilos para el ícono de hamburguesa cuando el menú está abierto */
+.icono-hamburguesa.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px); /* Rotación y translación para crear un efecto de X */
+}
+
+.icono-hamburguesa.open span:nth-child(2) {
+    opacity: 0; /* Oculta el segundo trazo del ícono */
+}
+
+.icono-hamburguesa.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px); /* Rotación y translación para crear un efecto de X */
+}
+
+/* Estilos predeterminados para el ícono de hamburguesa */
+.icono-hamburguesa span:first-child {
+    transform: none; /* Restaura la transformación predeterminada */
+}
+
+.icono-hamburguesa span:first-child {
+    opacity: 1; /* Restaura la opacidad predeterminada */
+}
+
+.icono-hamburguesa span:first-child {
+    transform: none; /* Restaura la transformación predeterminada */
 }
