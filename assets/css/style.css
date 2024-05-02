@@ -137,3 +137,71 @@ a:hover {
 .icono-hamburguesa span:first-child {
     transform: none; /* Restaura la transformación predeterminada */
 }
+
+/* Estilos para todas las secciones */
+section {
+    box-sizing: border-box; /* La caja incluye el borde y el relleno en el cálculo del tamaño */
+    height: 96vh; /* Altura del 96% del viewport */
+    margin: 0 10rem; /* Márgenes izquierdo y derecho de 10 rem */
+    min-height: fit-content; /* Altura mínima para ajustarse al contenido */
+    padding-top: 4vh; /* Relleno en la parte superior del 4% del viewport */
+}
+
+/* Estilos para el contenedor de la sección */
+.seccion__contenedor {
+    display: flex; /* Establece el contenedor como flexbox */
+}
+
+/* Estilos para la sección 'sobre-mi' */
+#sobre-mi {
+    display: flex; /* Establece el contenedor como flexbox */
+    gap: 5rem; /* Espacio entre los elementos secundarios de 5 rem */
+    height: 80vh; /* Altura del 80% del viewport */
+    justify-content: center; /* Centra los elementos secundarios horizontalmente */
+}
+
+/* Estilos para el contenedor de la foto en la sección */
+.seccion__contenedor-foto {
+    display: flex; /* Establece el contenedor como flexbox */
+    height: 400px; /* Altura de 400 píxeles */
+    margin: 0 auto; /* Margen automático a los lados */
+    width: 400px; /* Ancho de 400 píxeles */
+}
+
+/* Estilos para el texto en la sección */
+.seccion__texto {
+    align-self: center; /* Alinea el texto verticalmente al centro */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+/* Estilos para el párrafo en el texto de la sección */
+.seccion__texto p {
+    font-weight: 600; /* Peso de la fuente en negrita */
+}
+
+/* Estilos para el primer párrafo en el texto de la sección */
+.seccion__texto__p1 {
+    text-align: center; /* Alinea el texto al centro */
+    font-size: 1.75rem; /* Tamaño de fuente de 1.75 rem */
+    margin-bottom: 1rem; /* Margen inferior de 1 rem */
+}
+
+/* Estilos para el título en la sección */
+.titulo {
+    font-size: 3rem; /* Tamaño de fuente de 3 rem */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+/* Estilos para el contenedor de redes sociales */
+#contenedor-redes-sociales {
+    display: flex; /* Establece el contenedor como flexbox */
+    gap: 1rem; /* Espacio entre los elementos secundarios de 1 rem */
+    justify-content: center; /* Centra los elementos secundarios horizontalmente */
+    margin-top: 1rem; /* Margen superior de 1 rem */
+}
+
+/* Estilos para los íconos */
+.icono {
+    height: 2rem; /* Altura de 2 rem */
+    cursor: pointer; /* Cursor en forma de mano al pasar sobre los íconos */
+}
