@@ -180,11 +180,15 @@ section {
 }
 
 /* Estilos para el primer párrafo en el texto de la sección */
-.seccion__texto__p1 {
+.seccion__texto__parte1 {
     text-align: center; /* Alinea el texto al centro */
+}
+
+.seccion__texto__parte2 {
     font-size: 1.75rem; /* Tamaño de fuente de 1.75 rem */
     margin-bottom: 1rem; /* Margen inferior de 1 rem */
 }
+
 
 /* Estilos para el título en la sección */
 .titulo {
@@ -204,4 +208,47 @@ section {
 .icono {
     height: 2rem; /* Altura de 2 rem */
     cursor: pointer; /* Cursor en forma de mano al pasar sobre los íconos */
+}
+
+/* Botones */
+.boton-contenedor {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.boton {
+    border-radius: 2rem;
+    font-weight: 600;
+    padding: 1rem;
+    transition: all 300ms ease;
+    width: 8rem;
+}
+
+.boton-color-1,
+.boton-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.boton-color-1:hover,
+.boton-color-2:hover {
+    cursor: pointer;
+}
+
+.boton-color-1,
+.boton-color-2:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+}
+
+.boton-color-1:hover {
+    background: rgb(0, 0, 0);
+}
+
+.boton-color-2 {
+    background: none;
+}
+
+.boton-color-2:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
 }
