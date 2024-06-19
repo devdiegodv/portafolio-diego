@@ -212,43 +212,50 @@ section {
 
 /* Botones */
 .boton-contenedor {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
+    display: flex; /* Utiliza flexbox para alinear los botones */
+    gap: 1rem; /* Espacio entre los botones */
+    justify-content: center; /* Centra los botones horizontalmente */
 }
 
+/* Estilos base para todos los botones */
 .boton {
-    border-radius: 2rem;
-    font-weight: 600;
-    padding: 1rem;
-    transition: all 300ms ease;
-    width: 8rem;
+    border-radius: 2rem; /* Borde redondeado */
+    font-weight: 600; /* Grosor de la fuente */
+    padding: 1rem; /* Espacio interno */
+    transition: all 300ms ease; /* Transición suave */
+    width: 8rem; /* Ancho fijo */
 }
 
+/* Estilos específicos para botones con clase .boton-color-1 y .boton-color-2 */
 .boton-color-1,
 .boton-color-2 {
-    border: rgb(53, 53, 53) 0.1rem solid;
+    border: rgb(53, 53, 53) 0.1rem solid; /* Borde sólido gris oscuro */
 }
 
+/* Cambio de cursor al hacer hover en botones .boton-color-1 y .boton-color-2 */
 .boton-color-1:hover,
 .boton-color-2:hover {
-    cursor: pointer;
+    cursor: pointer; /* Cursor de tipo puntero */
 }
 
+/* Estilos de fondo y texto al interactuar con .boton-color-1 y .boton-color-2 */
 .boton-color-1,
 .boton-color-2:hover {
-    background: rgb(53, 53, 53);
-    color: white;
+    background: rgb(53, 53, 53); /* Fondo gris oscuro */
+    color: white; /* Texto blanco */
 }
 
+/* Cambio de fondo al hacer hover en .boton-color-1 */
 .boton-color-1:hover {
-    background: rgb(0, 0, 0);
+    background: rgb(0, 0, 0); /* Fondo negro */
 }
 
+/* Estilos específicos para .boton-color-2 */
 .boton-color-2 {
-    background: none;
+    background: none; /* Fondo transparente */
 }
 
+/* Cambio de borde al hacer hover en .boton-color-2 */
 .boton-color-2:hover {
-    border: rgb(255, 255, 255) 0.1rem solid;
+    border: rgb(255, 255, 255) 0.1rem solid; /* Borde sólido blanco */
 }
