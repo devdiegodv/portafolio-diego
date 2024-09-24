@@ -15,6 +15,10 @@ html {
     scroll-behavior: smooth; /* Establece un desplazamiento suave para el documento HTML, lo que significa que los desplazamientos se animarán en lugar de ser instantáneos. */
 }
 
+p {
+    color: rgb(85, 85, 85)
+}
+
 a,
 .btn {
     transition: all 300ms ease; /* Establece una transición para todos los cambios de propiedades CSS en los elementos anclados `<a>` y los botones `.btn`. La transición tendrá una duración de 300 milisegundos y una función de temporización de aceleración suave. Esto significa que cualquier cambio en propiedades CSS (como color, tamaño, posición, etc.) se animará durante 300ms con un efecto de aceleración suave. */
@@ -40,14 +44,15 @@ nav {
 a {
     color: black; /* color texto de etiqueta hipervínculo <a> */
     text-decoration: none; /* remover subrayado de texto */
+    text-decoration-color: white;
 }
 
 /* pseudoclase hover se utiliza cuando se pasa el cursor sobre elementos */
 a:hover {
-    color: gray; /* establecer color */
+    color: grey; /* establecer color */
     text-decoration: underline; /* establecer subrayado */
     text-underline-offset: 1rem; /* distancia de subrayado y texto */
-    text-decoration-color: rgb(255, 0, 0); /* color del subrayado de los enlaces. */
+    text-decoration-color: rgb(181, 181, 181); /* color del subrayado de los enlaces. */
 }
 
 .logo {
@@ -148,12 +153,12 @@ section {
 }
 
 /* Estilos para el contenedor de la sección */
-.seccion__contenedor {
+.seccion-contenedor {
     display: flex; /* Establece el contenedor como flexbox */
 }
 
-/* Estilos para la sección 'sobre-mi' */
-#sobre-mi {
+/* Estilos para la sección 'perfil' */
+#perfil {
     display: flex; /* Establece el contenedor como flexbox */
     gap: 5rem; /* Espacio entre los elementos secundarios de 5 rem */
     height: 80vh; /* Altura del 80% del viewport */
@@ -258,4 +263,56 @@ section {
 /* Cambio de borde al hacer hover en .boton-color-2 */
 .boton-color-2:hover {
     border: rgb(255, 255, 255) 0.1rem solid; /* Borde sólido blanco */
+}
+
+/* Estilos para la sección 'sobre mí' */
+#sobre-mi{
+    position: relative; /* Establece un contexto de posicionamiento para elementos hijos con posición absoluta. */
+}
+
+.contenedor-sobremi {
+    gap: 2rem; /* Espacio entre los elementos dentro del contenedor. */
+    margin-bottom: 2rem; /* Margen inferior del contenedor. */
+    margin-top: 2rem; /* Margen superior del contenedor. */
+}
+
+.contenedor-sobremi-detalles {
+    flex-direction: column; /* Organiza los hijos en una columna. */
+    justify-content: center; /* Centra los hijos en el eje vertical. */
+}
+
+.contenedor-sobremi,
+.contenedor-sobremi-detalles {
+    display: flex; /* Aplica el modelo flexbox a ambos contenedores. */
+}
+
+.sobre-mi-foto {
+    border-radius: 2rem; /* Bordes redondeados para la imagen. */
+}
+
+.flecha {
+    bottom: 2.5rem; /* Posiciona la flecha 2.5rem desde la parte inferior del contenedor padre. */
+    position: absolute; /* Permite que la flecha se coloque en relación con el contenedor padre que tiene posición relativa. */
+    right: -5rem; /* Posiciona la flecha 5rem a la derecha del contenedor padre. */
+}
+
+.contenedor-detalles {
+    background: white; /* Color de fondo blanco para el contenedor de detalles. */
+    border: rgb(53, 53, 53) 0.1rem solid; /* Borde sólido de 0.1rem con un color gris oscuro. */
+    border-color: rgb(163, 163, 163); /* Color de borde más claro para el contenedor. */
+    border-radius: 2rem; /* Bordes redondeados para suavizar el diseño. */
+    flex: 1; /* Permite que el contenedor de detalles ocupe espacio flexible en su contenedor padre. */
+    padding: 1.5rem; /* Espaciado interno del contenedor. */
+    text-align: center; /* Centra el texto dentro del contenedor. */
+}
+
+.seccion-contenedor {
+    gap: 4rem; /* Espacio entre elementos en esta sección. */
+    height: 80%; /* Altura del contenedor como un porcentaje de su contenedor padre. */
+}
+
+.seccion__contenedor-foto {
+    height: 400px; /* Altura fija para el contenedor de la foto. */
+    margin: auto 0; /* Centrando verticalmente el contenedor en su espacio. */
+    width: 400px; /* Ancho fijo para el contenedor de la foto. */
 }
